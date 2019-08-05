@@ -9,6 +9,9 @@ const TodoList = props => {
     return (
         <>
             {props.todo.map((todo) => <Todo todo = {todo} />)}
+            <button className="clear-btn" onClick={props.ClearCompleted}>
+            Clear Completed
+            </button>
         </>
     )
 }

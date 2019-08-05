@@ -50,7 +50,7 @@ class App extends React.Component {
   render() {
     return (
       <>
-        {/* <TodoForm /> */}
+        <TodoForm AddTodo = {this.AddTodo}/>
         <TodoList todo={this.state.todo} />
       </>
     );
